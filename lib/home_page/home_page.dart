@@ -192,7 +192,7 @@ class HomePage extends StatelessWidget {
 }
 
 onSelected(BuildContext context, MenuItem item) {
-  String _url = "https://www.youtube.com/watch?v=GnCk7kbXrSU";
+  String _url = "https://github.com/akmakmpp/mynoteapp";
   void _launchURL() async {
     if (!await launch(_url)) throw 'Could not launch $_url';
   }
