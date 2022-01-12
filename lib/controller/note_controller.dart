@@ -15,6 +15,7 @@ class NoteController extends GetxController {
 
   TextEditingController titleController = TextEditingController();
   TextEditingController noteController = TextEditingController();
+  var formkey = GlobalKey<FormState>();
 
   static final _db = NoteDatabase.instance;
 
@@ -127,6 +128,8 @@ class NoteController extends GetxController {
     getAllNote();
     getAllFavouriteNote();
     getAllTrashNote();
+    clear();
+    Get.back();
   }
 
   clear() {
