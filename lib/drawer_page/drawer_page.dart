@@ -12,16 +12,13 @@ class DrawerPage extends StatelessWidget {
         backgroundColor: Colors.grey[200],
         child: ListView(
           children: [
-            const Padding(
-              padding: EdgeInsets.only(right: 10.0, top: 50),
-              child: Text(
-                'My Note',
-                textAlign: TextAlign.end,
-                style: TextStyle(color: Colors.red, fontSize: 20),
+            SizedBox(
+              width: 200,
+              height: 200,
+              child: Image.asset(
+                "images/mynote.jpg",
+                fit: BoxFit.contain,
               ),
-            ),
-            const SizedBox(
-              height: 50,
             ),
             const Divider(
               thickness: 2.0,
