@@ -57,7 +57,7 @@ class NoteDatabase {
 
   Future<int> insert(Map<String, dynamic> noteRow) async {
     Database db = await instance.database;
-
+    log('instance' + instance.database.toString());
     return await db.insert(tbName, noteRow,
         conflictAlgorithm: ConflictAlgorithm.replace, nullColumnHack: "");
   }
